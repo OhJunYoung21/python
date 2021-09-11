@@ -1,0 +1,6 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import random
+x = np.random.randint(1,7,100000) //1~6까지의 구간 사이의 정수를 랜덤으로 100,000번 호출한다.
+plt.hist(x, bins = 6, width=0.6) //plt 모듈에서 hist라는 함수를 불러오고 함수에 들어가는 정의역은 총 3가지,x와 bins(구간의 수),그리고 도표를 그리는데 필요한 너비(width)이다.
+plt.show() //plt모듈의 show()라는 함수호출.pycharm에서 실행시 히스토그램을 보여준다.
