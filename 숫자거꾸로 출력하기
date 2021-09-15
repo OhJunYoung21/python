@@ -1,0 +1,15 @@
+n = int(input())
+
+a = input().split()
+
+for i in range(n):
+    a[i] = int(a[i])
+
+new_list = []
+num_1 = len(a)
+
+for i in range(len(a)):
+    new_list.append(a[n-1-i])
+
+for i in range(n):
+    print(new_list[i],end = ' ')
