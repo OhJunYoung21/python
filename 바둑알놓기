@@ -1,0 +1,15 @@
+d = []  # 대괄호 [ ] 를 이용해 아무것도 없는 빈 리스트 만들기
+for i in range(20):
+    d.append([])  # 리스트 안에 다른 리스트 추가해 넣기 [[],[],[],[]....]같은 꼴을 만들고 이를 2차원으로 볼 수도 있다.
+    for j in range(20):
+        d[i].append(0)  # 리스트 안에 들어있는 리스트 안에 0 추가해 넣기 1차 리스트를 y축이라 가정하고, 두번쨰 리스트를 y축 리스트라 가정한다.
+
+n = int(input())
+for i in range(n):
+    x, y = input().split()   #a = list(map(int,input().split())으로 저장할수 있다.
+    d[int(x)][int(y)] = 1    #입력받은 좌표값에 1을 넣어준다. 입력 회수는 n으로 지정한다.
+
+for i in range(1, 20):
+    for j in range(1, 20):
+        print(d[i][j], end=' ')  # 공백을 두고 한 줄로 출력, 2차원 리스트를 출력한다.
+    print()  # 줄 바꿈
