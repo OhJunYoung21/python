@@ -1,0 +1,20 @@
+import numpy as np
+a = np.arange(2,25,2) #1~25사이의 2의배수 12개로 1차원배열(a) 생성,출력
+print(a)
+
+a[2:6] = -20  #a의 인덱스2~5의 요소값을 -20으로 수정 및 출력
+print(a)
+
+b = a.reshape(3,4) #a를 3x4배열로 변경 및 출력
+print("{}".format(b))
+
+a = a.ravel()
+a = a.reshape(2,6) #a를 2x6 배열로 변경 및 출력
+print(a)
+
+a1 = a[0] #a 1행의 값을 출력하여 a1을 만들고,a1의 모든값을 0으로 변경 및 출력
+a1[:6] = 0
+print(a1)
+
+m = a<0 #a에서 음수인 값을 추출
+print(a[m])
